@@ -1,0 +1,18 @@
+<div *ngIf="product">
+      <div class="row" >
+        <div class="col-md-4">
+          <img [src]="product.productImage" alt="cover image" />
+        </div>
+        <div class="col-md-8">
+          <h3 class="title">{{product.productName}}</h3>
+          <p>{{product.seller}}</p>
+          <p>{{product.description}}</p>
+          <div class="row">
+            <div class="col-md-6">
+             <button class="btn btn-danger" (click) = "deleteProduct()">Delete Product</button>
+           </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
